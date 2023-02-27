@@ -98,12 +98,11 @@ function Next() {
 name()
 function name() {
     var span = document.getElementsByClassName('span')
-    console.log(span)
     for(var i = 0; i < span.length; i++) {
         var r = Math.round(Math.random()*255)
         var g = Math.round(Math.random()*255)
         var b = Math.round(Math.random()*255)
-        console.log(span[i].style.color = `rgb(${r},${g}, ${b})`)
+        span[i].style.color = `rgb(${r},${g}, ${b})`
     }
 }
 function Rise() {
