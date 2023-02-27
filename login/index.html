@@ -9,39 +9,22 @@
 </head>
 <body>
 <style>
+    .span {
+        font-size: 18px;
+    }
+    .lunbo {
+        width: 100%;
+        position: absolute;
+        /* left: 50%; */
+    }
     #name {
+        top: 900px;
+        left: -100px;
         /* height: 200px; */
         /* background-color: lightblue; */
         /* border: 1px solid black; */
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-    }
-    #name1 {
-        /* height: 200px; */
-        /* background-color: lightblue; */
-        /* border: 1px solid black; */
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-    }
-    #name2 {
-        /* height: 200px; */
-        /* background-color: lightblue; */
-        /* border: 1px solid black; */
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-    }
-    #name3 {
-        /* height: 200px; */
-        /* background-color: lightblue; */
-        /* border: 1px solid black; */
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-    }#name4 {
-        /* height: 200px; */
-        /* background-color: lightblue; */
-        /* border: 1px solid black; */
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
+        -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 10s infinite;
     }
     @-webkit-keyframes mymove {
         50% {margin-top: 500px;}
@@ -52,7 +35,63 @@
     }
 </style>
 <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
-    <div id="name" style="position: absolute; z-index: 1;"></div>
+    <div id="" style="position: absolute; z-index: 1; bottom: 300px">
+        <p style="margin-left: 200px;">
+            <span class="span" style="margin-right: 30px;">小徐是我的宝贝</span>
+            <span class="span">小徐是乖乖宝贝</span>
+        </p>
+        <p style="margin-left: 175px;">
+            <span class="span">相逢的意义在于照亮彼此，不然的话，一个人</span>
+        </p>
+        <p style="margin-left: 140px;">
+            <span class="span">喝茶也很浪漫，一个人吹风也能清醒。“我与月亮进行了</span>
+        </p>
+        <p style="margin-left: 120px;">
+            <span class="span">一次谈话,它与我谈论太阳,而我与它谈论你”。手里没有筹码</span>
+        </p>
+        <p style="margin-left: 140px;">
+            <span class="span">每一次心动都是在梭哈。❤️道理我都懂,可情绪不讲道理。</span>
+        </p>
+        <p style="margin-left: 160px;">
+            <span class="span">我们怎么会没有话题可聊呢？每天的夕阳都不一样！</span>
+        </p>
+        <p style="margin-left: 180px;">
+            <span class="span">我看过归鸟蝉鸣,烈日骄阳,我看见梦的尽头是你</span>
+        </p>
+        <p style="margin-left: 200px;">
+            <span class="span">从此天光大亮，你是我全部的幻想和渴望</span>
+        </p>
+        <p style="margin-left: 210px;">
+            <span class="span">“遇见你之前真的不知道什么叫幸福”</span>
+        </p>
+        <p style="margin-left: 230px;">
+            <span class="span">蓝桉已遇释怀鸟不爱万物只爱你</span>
+        </p>
+        <p style="margin-left: 245px;">
+            <span class="span">也许多少年后在某个地方,我</span>
+        </p>
+        <p style="margin-left: 270px;">
+            <span class="span">将轻声叹息把往事回顾</span>
+        </p>
+        <p style="margin-left: 290px;">
+            <span class="span">一片树林里分出两</span>
+        </p>
+        <p style="margin-left: 310px;">
+            <span class="span">条路,而我选择</span>
+        </p>
+        <p style="margin-left: 325px;">
+             <span class="span">了人迹更少</span>
+        </p>
+        <p style="margin-left: 340px;">
+            <span class="span">的一条</span>
+       </p>
+       <p style="margin-left: 355px;">
+        <span class="span">❤️</span>
+       </p>
+       <p style="margin-left: 270px;">
+        <span class="span">从此决定了我一生的道路</span>
+       </p>
+    </div>
     <div id="name1" style="position: absolute; top: 20px; z-index: 1;"></div>
     <div id="name2" style="position: absolute; top: 40px; z-index: 1;"></div>
     <div id="name3" style="position: absolute; top: 60px; z-index: 1;"></div>
@@ -68,6 +107,9 @@
             <div class="div3"></div>
             <div class="div4"></div>
         </div>
+    </div>
+    <div class="lunbo">
+        <img style="width: 100%; height: 600px" id="img" src="../images/1.jpeg" alt="">
     </div>
 </div>
 
@@ -87,5 +129,17 @@
     </div>
 </div>
 <script type="text/javascript" src="./js/love.js"></script>
+<script>
+    var ind = 1
+    function lunbo() {
+        ind++
+        if (ind > 13) {
+            ind = 1
+        }
+        var img = document.getElementById('img')
+        img.src = `../images/${ind}.jpeg`
+    }
+    setInterval(lunbo, 2000)
+</script>
 </body>
 </html>
