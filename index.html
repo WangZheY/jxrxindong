@@ -43,7 +43,7 @@
         </p>
         <p style="width: 500px; margin: 0 auto;">
             <input type="text" id="inp">
-            <button id="but">点击进入属于你的世界</button>
+            <button id="but">登陆</button>
         </p>
         <p>
             <span id="span"></span>
@@ -55,7 +55,7 @@
         return document.getElementById(id);
     }
     $('but').onclick = function () {
-        if ($('inp').value === '蒋文茹') {
+        if ($('inp').value === '徐宝贝') {
             alert('登陆成功！')
             window.location.href = './login/index.html'
         } else {

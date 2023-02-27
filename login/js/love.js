@@ -95,7 +95,29 @@ function Next() {
         block.style.display = "none";   //隐藏多出的block方块
     }
 }
-
+name()
+function name() {
+    let name = document.getElementById('name')
+    let name1 = document.getElementById('name1')
+    let name2 = document.getElementById('name2')
+    let name3 = document.getElementById('name3')
+    let name4 = document.getElementById('name4')
+    let html = ''
+    const arr = ['徐宝贝超可爱', '徐宝贝超温柔', '徐宝贝超腻害', '百年好合', '百年琴瑟', '文定吉祥', '姻缘相配', '百年琴瑟', '百年偕老', '甜蜜美满', '新婚快乐', '百年偕老', '花好月圆', '天生一对', '地造一双', '恩爱有佳', '相敬如宾', '成家之始']
+    arr.map((item) => {
+        var r = Math.round(Math.random()*255)
+        var g = Math.round(Math.random()*255)
+        var b = Math.round(Math.random()*255)
+        html += `
+            <span class="span" style="margin: 10px 30px; display: inline-block; color: rgb(${r},${g},${b})">${item}</span>
+        `
+    })
+    name.innerHTML = html
+    name1.innerHTML = html
+    name2.innerHTML = html
+    name3.innerHTML = html
+    name4.innerHTML = html
+}
 function Rise() {
     //4.爱心升高，多出的那个小方块开始掉落
     // console.log("开始升空");
